@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/i18nextLearningProject/static/css/main.073c9b0a.css",
+    "main.js": "/i18nextLearningProject/static/js/main.93ffb549.js",
+    "static/js/787.0c3f432a.chunk.js": "/i18nextLearningProject/static/js/787.0c3f432a.chunk.js",
+    "static/media/logo.svg": "/i18nextLearningProject/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/i18nextLearningProject/index.html",
+    "main.073c9b0a.css.map": "/i18nextLearningProject/static/css/main.073c9b0a.css.map",
+    "main.93ffb549.js.map": "/i18nextLearningProject/static/js/main.93ffb549.js.map",
+    "787.0c3f432a.chunk.js.map": "/i18nextLearningProject/static/js/787.0c3f432a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.93ffb549.js"
+  ]
+}
