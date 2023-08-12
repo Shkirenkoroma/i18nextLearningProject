@@ -1,10 +1,11 @@
-import { ChangeEvent, FC, useTransition,useEffect } from "react";
+import { ChangeEvent, FC,useEffect } from "react";
+import { useTranslations } from "react-i18next";
 
 
 //Здесь необходимо подключить навбар из bootstrapp
 //В навбаре сслыки обернуть в link
 const NavBar:FC= ():JSX.Element=> {
-    const {t, i18next} = useTranslation()
+    const {t, i18next} = useTranslations()
     const onChangeLanguage = (e:ChangeEvent<HTMLElement>) =>{
 i18n.changeLanguage(e.target.value)
 
