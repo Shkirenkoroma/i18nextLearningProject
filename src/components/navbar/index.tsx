@@ -1,12 +1,13 @@
 import { ChangeEvent, FC,useEffect } from "react";
-import { useTranslations } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
 //Здесь необходимо подключить навбар из bootstrapp
 //В навбаре сслыки обернуть в link
 const NavBar:FC= ():JSX.Element=> {
-    const {t, i18next} = useTranslations()
+    const {t, i18n} = useTranslation()
     const onChangeLanguage = (e:ChangeEvent<HTMLElement>) =>{
+        //@ts-ignore
 i18n.changeLanguage(e.target.value)
 
     }
@@ -15,6 +16,7 @@ i18n.changeLanguage(e.target.value)
     useEffect(()=>{
 for(let index = 0; index < document.getElementsByClassName('lang').length; index++){
 const element = document.getElementsByClassName('lang')[index];
+//@ts-ignore
 if(element.value === i18n.language){
     element.setAttribute("selected", "true")
 }
