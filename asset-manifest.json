@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/i18nextLearningProject/static/css/main.964fdded.css",
-    "main.js": "/i18nextLearningProject/static/js/main.5b2776d2.js",
+    "main.js": "/i18nextLearningProject/static/js/main.ba436648.js",
     "index.html": "/i18nextLearningProject/index.html",
     "main.964fdded.css.map": "/i18nextLearningProject/static/css/main.964fdded.css.map",
-    "main.5b2776d2.js.map": "/i18nextLearningProject/static/js/main.5b2776d2.js.map"
+    "main.ba436648.js.map": "/i18nextLearningProject/static/js/main.ba436648.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.5b2776d2.js"
+    "static/js/main.ba436648.js"
   ]
 }
