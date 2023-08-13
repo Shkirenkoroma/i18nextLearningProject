@@ -1,17 +1,13 @@
 import { ChangeEvent, FC,useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom'
 
-
-//Здесь необходимо подключить навбар из bootstrapp
-//В навбаре сслыки обернуть в link
 const NavBar:FC= ():JSX.Element=> {
     const {t, i18n} = useTranslation()
     const onChangeLanguage = (e:ChangeEvent<HTMLElement>) =>{
         //@ts-ignore
 i18n.changeLanguage(e.target.value)
-
     }
-
 
     useEffect(()=>{
 for(let index = 0; index < document.getElementsByClassName('lang').length; index++){
@@ -23,17 +19,30 @@ if(element.value === i18n.language){
 }
     }, [])
 return <div>
-    <ul>
-        <li>{t("menu.home")}</li>
-        <li>{t('menu.contact')}</li>
-        <li></li>
-    </ul>
-    <select name="" id="" onChange={onChangeLanguage}>
-
-        <option value="en" className="lang">EN</option>
-        <option value="fr" className="lang">FR</option>
-        <option value=""></option>
+<nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">i18n</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/">{t("menu.home")}</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/contact">{t("menu.contact")}</Link>
+        </li>
+      </ul>
+    </div>
+    <div className="d-flex">
+    <select className="form-select" aria-label="Default select example" onChange={onChangeLanguage}>
+     <option value="en" className="lang">EN</option>
+     <option value="fr" className="lang">FR</option>
     </select>
+    </div>
+  </div>
+</nav>
 </div>
 }
 
