@@ -6,6 +6,7 @@ import NavBar from './components/navbar';
 import './App.css';
 
 const App:FC = ():JSX.Element => {
+  
   return (
    <BrowserRouter>
    <NavBar/>
