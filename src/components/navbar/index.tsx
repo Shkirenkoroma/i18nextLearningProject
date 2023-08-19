@@ -6,6 +6,7 @@ const NavBar:FC= ():JSX.Element=> {
     const {t, i18n} = useTranslation()
     
     const onChangeLanguage = (e:ChangeEvent<HTMLSelectElement>) =>{
+      console.log('value', e.target.value)
     i18n.changeLanguage(e.target.value)
     }
 
