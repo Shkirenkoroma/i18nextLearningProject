@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <Suspense fallback="loading">
+  <Suspense fallback="...loading">
     <App />
 </Suspense>
 );
